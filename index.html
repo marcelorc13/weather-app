@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tempo Agora</title>
+</head>
+<body class="bg-slate-600">
+    <div class="bg-white md:mx-32 mt-10 flex flex-col gap-y-12 px-40 py-8 rounded-xl">
+        <div class="flex justify-center">
+            <input class="border border-black rounded-xl ps-4 py-1" placeholder="Digite a cidade" id="cidade" type="text">
+        </div>
+
+        <div id="conteudo" class="flex flex-col">
+            <div class="flex justify-center items-center">
+                <p id="temperatura" class="text-4xl">00.0</p>
+                <p class="text-4xl">°C</p>
+            </div>
+
+            <div class="flex justify-center items-center">
+                <p class="text-2xl" id="humidade">00.0%</p>
+            </div>
+
+            <div class="flex justify-center items-center">
+                <p class="text-2xl" id="velocidadeDoVento">00.0Km/h</p>
+            </div>
+
+            <div></div>
+        </div>
+
+        <div class="flex justify-center">
+            <button class="border border-black rounded-xl px-4 py-1" id="btn">Pesquise</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
